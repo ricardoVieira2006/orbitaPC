@@ -138,6 +138,6 @@
   <div class="footer-bottom"><div class="container">© 2026 Orbita PC — Todos os direitos reservados</div></div>
 </footer>
 
-<script src="assets/js/main.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
