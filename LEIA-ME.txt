@@ -1,0 +1,36 @@
+ORBITA PC — Versão HTML/CSS/JS + PHP
+=====================================
+
+CONTEÚDO
+--------
+index.html          Página inicial
+pc-builder.html     PC Builder com IA + formulário de orçamento
+vodafone.html       Pacotes Fibra Vodafone + formulário de adesão
+web-design.html     Criação de sites + estimador de preço + formulário
+enviar.php          Recebe os formulários e envia-tos por email (PHP mail)
+assets/css/         Estilos (tema escuro)
+assets/js/          JavaScript (menu, slider, estimador, IA)
+
+INSTALAÇÃO (alojamento partilhado / cPanel)
+-------------------------------------------
+1. Faz upload de TODOS os ficheiros e pastas para a pasta pública
+   (normalmente public_html/ ou www/).
+2. Abre enviar.php e muda a linha $PARA para o teu email.
+3. Abre o teu domínio — está pronto.
+
+NOTAS
+-----
+- Os formulários usam a função mail() do PHP, disponível em quase
+  todos os alojamentos partilhados. Se não chegarem emails, verifica
+  o spam ou pergunta ao teu alojamento se o mail() está ativo.
+- O PC Builder com IA chama a API online da Orbita PC
+  (assets/js/builder.js, variável AI_URL). Precisa de internet.
+  Se tiveres o teu próprio backend, muda esse URL.
+- Testar no teu computador: precisas de PHP instalado. Na pasta do
+  site corre:  php -S localhost:8000   e abre http://localhost:8000
+  (o mail() não envia emails reais em localhost — é normal).
+- As imagens vêm da internet (Unsplash/Pexels). Para ficarem 100%
+  locais, descarrega-as para assets/img/ e muda os URLs nos HTML.
+
+Contactos no site: geral@nexustech.pt · +351 916 040 762 · Porto
+Edita os ficheiros .html para alterar textos, preços e contactos.
